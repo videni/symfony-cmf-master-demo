@@ -119,7 +119,7 @@ sonata_block:
             contexts: [admin]
         sonata_admin_doctrine_phpcr.tree_block:
             settings:
-                id: '/cms'
+                id: "/cms"
             contexts: [admin]
 
 sonata_admin:
@@ -131,9 +131,9 @@ sonata_admin:
 sonata_doctrine_phpcr_admin:
     document_tree_defaults: [locale]
     document_tree:
-#        Doctrine\ODM\PHPCR\Document\Generic:
-#            valid_children:
-#                - all
+        Doctrine\ODM\PHPCR\Document\Generic:
+            valid_children:
+                - all
 #        Acme\BasicCmsBundle\Document\Page:
 #            valid_children:
 #                - Acme\BasicCmsBundle\Document\Post
@@ -142,6 +142,5 @@ sonata_doctrine_phpcr_admin:
         Acme\BasicCmsBundle\Document\Site:
             valid_children:
                - all
-
 knp_menu:
     twig: true
